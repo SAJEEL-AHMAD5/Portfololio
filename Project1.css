@@ -1,0 +1,89 @@
+/* Reset */
+html, body, header, nav, ul, li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Montserrat', sans-serif; /* Updated font family */
+    font-weight: 400;
+    font-style: normal;
+    background: radial-gradient(circle, #c7ecee 0%, #7ed6df 30%, #22a6b3 70%, #3dc1d3 100%);
+    padding: 20px;
+    line-height: 1.6;
+    color: #333; /* Dark text color for better readability */
+}
+
+header {
+    background-color: transparent; /* Remove background color from header */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+p {
+    font-family: "Playfair Display", sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul ul {
+    display: none;
+    background-color: #333;
+    padding: 10px;
+    position: absolute;
+    top: 100%; /* Position below parent list item */
+    left: 0;
+    z-index: 999; /* Ensure dropdown is on top of other content */
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li:hover > ul {
+    display: block; /* Show sub-menu on hover */
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul ul li {
+    display: block;
+}
+
+nav ul ul li:hover {
+    background-color: #555; /* Change background color on hover */
+}
+
+nav ul ul li a {
+    padding: 10px 20px; /* Add more padding for better clickable area */
+}
+
+/* Dropdown indicator */
+.dropbtn::after {
+    content: "\25BE"; /* Unicode character for down arrow */
+    margin-left: 5px;
+}
+
+/* CSS Transition for the image */
+header img {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* CSS Hover effect for the image */
+header img:hover {
+    transform: scale(1.1); /* Scale the image slightly on hover */
+}
